@@ -21,5 +21,6 @@ public class A {
 			System.out.print(a);
 			System.out.print(" ");
 	}
+		System.out.print("code changed");
 	}
 }
