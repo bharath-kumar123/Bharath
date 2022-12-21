@@ -1,0 +1,46 @@
+package com.bharath.first;
+
+import java.io.Serializable;
+
+public class Twitter implements Serializable {
+	private Integer sNo;
+	private String name;
+	private Integer twitterFreinds;
+	private Integer tweets;
+	public Twitter(Integer sNo, String name, Integer twitterFreinds, Integer tweets) {
+		super();
+		this.sNo = sNo;
+		this.name = name;
+		this.twitterFreinds = twitterFreinds;
+		this.tweets = tweets;
+	}
+	@Override
+	public String toString() {
+		return "Twitter [sNo=" + sNo + ", name=" + name + ", twitterFreinds=" + twitterFreinds + ", tweets=" + tweets
+				+ "]";
+	}
+	public Integer getsNo() {
+		return sNo;
+	}
+	public void setsNo(Integer sNo) {
+		this.sNo = sNo;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public Integer getTwitterFreinds() {
+		return twitterFreinds;
+	}
+	public void setTwitterFreinds(Integer twitterFreinds) {
+		this.twitterFreinds = twitterFreinds;
+	}
+	public Integer getTweets() {
+		return tweets;
+	}
+	public void setTweets(Integer tweets) {
+		this.tweets = tweets;
+	}
+}

@@ -1,0 +1,32 @@
+package com.bharath.first;
+
+
+public class A {
+	A()
+	{
+		System.out.println("A class default");
+	}
+	public static void main(String[] args) {
+		B b=new B();
+	}
+	
+}
+class B extends A
+{
+	B()
+	{
+		super();
+		System.out.println("default");
+		
+	}
+	B(int a,int b)
+	{
+		this(10,20,30);
+		System.out.println(a+b);
+	}
+	B(int a,int b,int c)
+	{
+		
+		System.out.println(a+b+c);
+	}
+}

@@ -1,0 +1,16 @@
+package com.bharath.first;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class A {
+	public static void main(String[] args) {
+		List<Twitter> l=new ArrayList<Twitter>();
+		l.add(new Twitter(1,"A",100,10000));
+		l.add(new Twitter(2,"B",100,20000));
+		l.add(new Twitter(3,"C",100,60000));
+		l.add(new Twitter(4,"D",100,70000));
+		System.out.println(l);
+	}
+	
+}

@@ -1,0 +1,25 @@
+package com.bharath.first;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class A {
+	public static void main(String[] args) {
+		List<Twitter> l=new ArrayList<Twitter>();
+		l.add(new Twitter(1,"A",100,10000));
+		l.add(new Twitter(2,"B",200,20000));
+		l.add(new Twitter(3,"C",500,60000));
+		l.add(new Twitter(4,"D",1000,70000));
+		double avgFreinds=l.stream().mapToDouble(Twitter::getTwitterFreinds).average().getAsDouble();
+		int maxFreinds=l.stream().mapToInt(Twitter::getTwitterFreinds).max().getAsInt();
+		int minFreinds=l.stream().mapToInt(Twitter::getTwitterFreinds).min().getAsInt();
+		
+		System.out.println(maxFreinds);
+//		l.stream().filter(a->a.getTweets()>50000).forEach(
+//				b->
+//				{
+//					System.out.println(b);
+//				});
+	}
+	
+}
